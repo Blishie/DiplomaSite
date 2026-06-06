@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет - Aval Emporium</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../images/main/logo.jpg" alt="Aval Emporium">
+                        <span class="logo-text">Aval Emporium</span>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="../index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="cart.html">Корзина</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="profile.html">Личный кабинет</a></li>
+                    </ul>
+                </nav>
+                <div class="header__actions">
+                    <div class="search">
+                        <input type="text" placeholder="Поиск товаров...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="cart">
+                        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="profile-page">
+        <div class="container">
+            <div class="profile-container">
+                <!-- Боковая панель -->
+                <div class="profile-sidebar">
+                    <div class="profile-info">
+                        <div class="profile-avatar">
+                            <img src="../images/avatars/default-avatar.jpg" alt="Аватар">
+                            <div class="avatar-change">Изменить</div>
+                        </div>
+                        <h2 class="profile-name">Имя пользователя</h2>
+                        <p class="profile-email">user@example.com</p>
+                    </div>
+                    <nav class="profile-nav">
+                        <a href="#profile" class="active" data-section="profile">
+                            <i class="fas fa-user"></i> Профиль
+                        </a>
+                        <a href="#buyer" data-section="buyer">
+                            <i class="fas fa-shopping-bag"></i> Панель покупателя
+                        </a>
+                        <a href="#seller" data-section="seller">
+                            <i class="fas fa-store"></i> Панель продавца
+                        </a>
+                        <a href="#orders" data-section="orders">
+                            <i class="fas fa-box"></i> Заказы
+                        </a>
+                        <a href="#favorites" data-section="favorites">
+                            <i class="fas fa-heart"></i> Избранное
+                        </a>
+                        <a href="#settings" data-section="settings">
+                            <i class="fas fa-cog"></i> Настройки
+                        </a>
+                    </nav>
+                </div>
+
+                <!-- Основной контент -->
+                <div class="profile-content">
+                    <!-- Секция профиля -->
+                    <section id="profile" class="profile-section active">
+                        <h2>Личные данные</h2>
+                        <form class="profile-form">
+                            <div class="form-group">
+                                <label>Имя</label>
+                                <input type="text" value="Имя пользователя">
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" value="user@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label>Телефон</label>
+                                <input type="tel" value="+7 (999) 999-99-99">
+                            </div>
+                            <div class="form-group">
+                                <label>О себе</label>
+                                <textarea rows="4">Краткая информация о пользователе</textarea>
+                            </div>
+                            <button type="submit" class="btn-primary">Сохранить изменения</button>
+                        </form>
+                    </section>
+
+                    <!-- Секция панели покупателя -->
+                    <section id="buyer" class="profile-section">
+                        <h2>Панель покупателя</h2>
+                        <div class="buyer-stats">
+                            <div class="stat-card">
+                                <i class="fas fa-shopping-cart"></i>
+                                <h3>Покупки</h3>
+                                <p>12 товаров</p>
+                            </div>
+                            <div class="stat-card">
+                                <i class="fas fa-star"></i>
+                                <h3>Отзывы</h3>
+                                <p>8 отзывов</p>
+                            </div>
+                            <div class="stat-card">
+                                <i class="fas fa-medal"></i>
+                                <h3>Статус</h3>
+                                <p>Постоянный клиент</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Секция панели продавца -->
+                    <section id="seller" class="profile-section">
+                        <h2>Панель продавца</h2>
+                        <div class="seller-stats">
+                            <div class="stat-card">
+                                <i class="fas fa-box"></i>
+                                <h3>Товары</h3>
+                                <p>15 активных</p>
+                            </div>
+                            <div class="stat-card">
+                                <i class="fas fa-chart-line"></i>
+                                <h3>Продажи</h3>
+                                <p>24 за месяц</p>
+                            </div>
+                            <div class="stat-card">
+                                <i class="fas fa-star"></i>
+                                <h3>Рейтинг</h3>
+                                <p>4.8 из 5</p>
+                            </div>
+                        </div>
+                        <div class="seller-actions">
+                            <button class="btn-primary">
+                                <i class="fas fa-plus"></i> Добавить товар
+                            </button>
+                            <button class="btn-secondary">
+                                <i class="fas fa-list"></i> Управление товарами
+                            </button>
+                        </div>
+                    </section>
+
+                    <!-- Секция заказов -->
+                    <section id="orders" class="profile-section">
+                        <h2>Мои заказы</h2>
+                        <div class="orders-list">
+                            <div class="order-item">
+                                <div class="order-header">
+                                    <span class="order-number">Заказ #1234</span>
+                                    <span class="order-date">01.03.2024</span>
+                                    <span class="order-status success">Доставлен</span>
+                                </div>
+                                <div class="order-products">
+                                    <div class="product-row">
+                                        <img src="../images/products/product1.jpg" alt="Товар">
+                                        <div class="product-info">
+                                            <h4>Название товара</h4>
+                                            <p>Количество: 1</p>
+                                        </div>
+                                        <div class="product-price">2999 ₽</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Секция избранного -->
+                    <section id="favorites" class="profile-section">
+                        <h2>Избранные товары</h2>
+                        <div class="favorites-grid">
+                            <div class="product-card">
+                                <img src="../images/products/product2.jpg" alt="Товар">
+                                <h3>Название товара</h3>
+                                <p class="price">1999 ₽</p>
+                                <button class="btn-primary">В корзину</button>
+                                <button class="btn-icon">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Секция настроек -->
+                    <section id="settings" class="profile-section">
+                        <h2>Настройки</h2>
+                        <form class="settings-form">
+                            <div class="form-group">
+                                <label>Уведомления</label>
+                                <div class="checkbox-group">
+                                    <label>
+                                        <input type="checkbox" checked> Email-уведомления
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" checked> SMS-уведомления
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Приватность</label>
+                                <div class="checkbox-group">
+                                    <label>
+                                        <input type="checkbox"> Скрыть профиль
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" checked> Показывать статус
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn-primary">Сохранить настройки</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__column">
+                    <h3>О компании</h3>
+                    <p>Мы предлагаем широкий ассортимент товаров повседневного спроса по доступным ценам.</p>
+                </div>
+                <div class="footer__column">
+                    <h3>Контакты</h3>
+                    <p>Телефон: +7 (XXX) XXX-XX-XX</p>
+                    <p>Email: info@example.com</p>
+                </div>
+                <div class="footer__column">
+                    <h3>Мы в соцсетях</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link facebook" aria-label="Facebook">
+                            <img src="../images/icons/facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="#" class="social-link x" aria-label="X (Twitter)">
+                            <img src="../images/icons/x.svg" alt="X (Twitter)">
+                        </a>
+                        <a href="#" class="social-link instagram" aria-label="Instagram">
+                            <img src="../images/icons/instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="#" class="social-link telegram" aria-label="Telegram">
+                            <img src="../images/icons/telegram.svg" alt="Telegram">
+                        </a>
+                        <a href="#" class="social-link youtube" aria-label="YouTube">
+                            <img src="../images/icons/youtube.svg" alt="YouTube">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Aval Emporium. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Переключение между разделами
+        document.querySelectorAll('.profile-nav a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                
+                // Убираем активный класс у всех ссылок и секций
+                document.querySelectorAll('.profile-nav a').forEach(l => l.classList.remove('active'));
+                document.querySelectorAll('.profile-section').forEach(s => s.classList.remove('active'));
+                
+                // Добавляем активный класс к выбранной ссылке и секции
+                link.classList.add('active');
+                const section = link.getAttribute('data-section');
+                document.getElementById(section).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название товара - Aval Emporium</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/product.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/main/logo.jpg" alt="Aval Emporium">
+                    <span class="logo-text">Aval Emporium</span>
+                </a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Поиск товаров...">
+                <button type="button">
+                    <img src="../images/icons/search.svg" alt="Поиск">
+                </button>
+            </div>
+            <div class="header-actions">
+                <a href="favorites.html" class="header-action">
+                    <img src="../images/icons/heart.svg" alt="Избранное">
+                    <span>Избранное</span>
+                </a>
+                <a href="cart.html" class="header-action">
+                    <img src="../images/icons/cart.svg" alt="Корзина">
+                    <span>Корзина</span>
+                </a>
+                <a href="profile.html" class="header-action">
+                    <img src="../images/icons/user.svg" alt="Профиль">
+                    <span>Профиль</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="product-page">
+        <div class="container">
+            <nav class="breadcrumbs">
+                <a href="index.html">Главная</a>
+                <span>/</span>
+                <a href="catalog.html">Каталог</a>
+                <span>/</span>
+                <a href="catalog.html?category=1">Категория</a>
+                <span>/</span>
+                <span>Название товара</span>
+            </nav>
+
+            <div class="product-container">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="../images/products/product1.jpg" alt="Товар" id="main-product-image">
+                    </div>
+                    <div class="thumbnail-list">
+                        <button class="thumbnail active">
+                            <img src="../images/products/product1.jpg" alt="Товар 1">
+                        </button>
+                        <button class="thumbnail">
+                            <img src="../images/products/product1-2.jpg" alt="Товар 1">
+                        </button>
+                        <button class="thumbnail">
+                            <img src="../images/products/product1-3.jpg" alt="Товар 1">
+                        </button>
+                        <button class="thumbnail">
+                            <img src="../images/products/product1-4.jpg" alt="Товар 1">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <h1 class="product-title">Название товара</h1>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <img src="../images/icons/star-filled.svg" alt="★">
+                            <img src="../images/icons/star-filled.svg" alt="★">
+                            <img src="../images/icons/star-filled.svg" alt="★">
+                            <img src="../images/icons/star-filled.svg" alt="★">
+                            <img src="../images/icons/star-half.svg" alt="★">
+                        </div>
+                        <span class="rating-value">4.5</span>
+                        <a href="#reviews" class="reviews-count">(125 отзывов)</a>
+                    </div>
+
+                    <div class="product-price">
+                        <span class="current-price">1999 ₽</span>
+                        <span class="old-price">2499 ₽</span>
+                        <span class="discount">-20%</span>
+                    </div>
+
+                    <div class="product-availability">
+                        <img src="../images/icons/check.svg" alt="✓">
+                        <span>В наличии</span>
+                    </div>
+
+                    <div class="product-actions">
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1" max="99">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="btn-primary add-to-cart">
+                            <img src="../images/icons/cart-white.svg" alt="Корзина">
+                            В корзину
+                        </button>
+                        <button class="btn-outline add-to-favorites">
+                            <img src="../images/icons/heart.svg" alt="Избранное">
+                        </button>
+                    </div>
+
+                    <div class="seller-info">
+                        <h3>Продавец</h3>
+                        <div class="seller-details">
+                            <img src="../images/seller-logo.png" alt="Логотип продавца">
+                            <div class="seller-text">
+                                <h4>Aval Emporium</h4>
+                                <p>Рейтинг: 4.8 ⭐ | 1000+ продаж</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="delivery-info">
+                        <h3>Доставка</h3>
+                        <ul>
+                            <li>
+                                <img src="../images/icons/truck.svg" alt="Доставка">
+                                <div>
+                                    <h4>Курьером</h4>
+                                    <p>1-3 дня, 300 ₽</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="../images/icons/box.svg" alt="Самовывоз">
+                                <div>
+                                    <h4>Самовывоз</h4>
+                                    <p>Сегодня, бесплатно</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-tabs">
+                <nav class="tabs-nav">
+                    <button class="tab-btn active" data-tab="description">Описание</button>
+                    <button class="tab-btn" data-tab="characteristics">Характеристики</button>
+                    <button class="tab-btn" data-tab="reviews">Отзывы</button>
+                </nav>
+
+                <div class="tab-content active" id="description">
+                    <h2>Описание товара</h2>
+                    <p>Подробное описание товара с его преимуществами и особенностями использования. Может включать несколько параграфов текста.</p>
+                    <ul>
+                        <li>Особенность 1</li>
+                        <li>Особенность 2</li>
+                        <li>Особенность 3</li>
+                    </ul>
+                </div>
+
+                <div class="tab-content" id="characteristics">
+                    <h2>Характеристики</h2>
+                    <table class="characteristics-table">
+                        <tr>
+                            <th>Производитель</th>
+                            <td>Название производителя</td>
+                        </tr>
+                        <tr>
+                            <th>Модель</th>
+                            <td>Номер модели</td>
+                        </tr>
+                        <tr>
+                            <th>Размеры</th>
+                            <td>10 x 20 x 30 см</td>
+                        </tr>
+                        <tr>
+                            <th>Вес</th>
+                            <td>1.5 кг</td>
+                        </tr>
+                        <tr>
+                            <th>Материал</th>
+                            <td>Металл, пластик</td>
+                        </tr>
+                        <tr>
+                            <th>Цвет</th>
+                            <td>Черный</td>
+                        </tr>
+                        <tr>
+                            <th>Гарантия</th>
+                            <td>12 месяцев</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="tab-content" id="reviews">
+                    <div class="reviews-header">
+                        <h2>Отзывы о товаре</h2>
+                        <button class="btn-primary">Написать отзыв</button>
+                    </div>
+
+                    <div class="reviews-summary">
+                        <div class="rating-summary">
+                            <div class="average-rating">
+                                <span class="rating-number">4.5</span>
+                                <div class="stars">
+                                    <img src="../images/icons/star-filled.svg" alt="★">
+                                    <img src="../images/icons/star-filled.svg" alt="★">
+                                    <img src="../images/icons/star-filled.svg" alt="★">
+                                    <img src="../images/icons/star-filled.svg" alt="★">
+                                    <img src="../images/icons/star-half.svg" alt="★">
+                                </div>
+                                <span class="total-reviews">125 отзывов</span>
+                            </div>
+                            <div class="rating-bars">
+                                <div class="rating-bar">
+                                    <span>5</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 70%"></div>
+                                    </div>
+                                    <span>70%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>4</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 20%"></div>
+                                    </div>
+                                    <span>20%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>3</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 7%"></div>
+                                    </div>
+                                    <span>7%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>2</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 2%"></div>
+                                    </div>
+                                    <span>2%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>1</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 1%"></div>
+                                    </div>
+                                    <span>1%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reviews-list">
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <img src="../images/default-avatar.png" alt="Пользователь">
+                                    <div>
+                                        <h4>Иван Иванов</h4>
+                                        <span class="review-date">15.03.2024</span>
+                                    </div>
+                                </div>
+                                <div class="review-rating">
+                                    <img src="../images/icons/star-filled.svg" alt="★">
+                                    <img src="../images/icons/star-filled.svg" alt="★">
+                                    <img src="../images/icons/star-filled.svg" alt="★">
+                                    <img src="../images/icons/star-filled.svg" alt="★">
+                                    <img src="../images/icons/star-filled.svg" alt="★">
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                <p>Отличный товар! Полностью соответствует описанию. Доставка быстрая, упаковка надежная.</p>
+                                <div class="review-images">
+                                    <img src="../images/reviews/review1-1.jpg" alt="Фото отзыва">
+                                    <img src="../images/reviews/review1-2.jpg" alt="Фото отзыва">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn-outline load-more">Показать ещё отзывы</button>
+                </div>
+            </div>
+
+            <section class="similar-products">
+                <h2>Похожие товары</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="../images/products/product2.jpg" alt="Товар">
+                        <h3>Похожий товар 1</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <img src="../images/icons/star-filled.svg" alt="★">
+                                <img src="../images/icons/star-filled.svg" alt="★">
+                                <img src="../images/icons/star-filled.svg" alt="★">
+                                <img src="../images/icons/star-filled.svg" alt="★">
+                                <img src="../images/icons/star.svg" alt="★">
+                            </div>
+                            <span>(42)</span>
+                        </div>
+                        <p class="price">1799 ₽</p>
+                        <button class="btn-primary">В корзину</button>
+                    </div>
+                    <!-- Добавьте ещё карточки товаров -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-column">
+                <h3>О компании</h3>
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Новости</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Помощь</h3>
+                <ul>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Возврат</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Контакты</h3>
+                <ul>
+                    <li>Телефон: 8 800 123-45-67</li>
+                    <li>Email: info@example.com</li>
+                    <li>Адрес: г. Москва, ул. Пушкина, д. 1</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Мы в соцсетях</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <img src="../images/icons/vk.svg" alt="VK">
+                    </a>
+                    <a href="#" class="social-link">
+                        <img src="../images/icons/telegram.svg" alt="Telegram">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/product.js"></script>
+</body>
+</html>

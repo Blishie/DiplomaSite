@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товаров - Aval Emporium</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/catalog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../images/main/logo.jpg" alt="Aval Emporium">
+                        <span class="logo-text">Aval Emporium</span>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="../index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="cart.html">Корзина</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="profile.html">Личный кабинет</a></li>
+                    </ul>
+                </nav>
+                <div class="header__actions">
+                    <div class="search">
+                        <input type="text" placeholder="Поиск товаров...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="cart">
+                        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                        <span class="cart-count">0</span>
+                    </div>
+                    <div class="auth">
+                        <a href="login.html">Войти</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="catalog">
+        <div class="container">
+            <div class="catalog__header">
+                <h1>Каталог товаров</h1>
+                <div class="catalog__controls">
+                    <div class="sort">
+                        <label for="sort">Сортировка:</label>
+                        <select id="sort">
+                            <option value="price-asc">По цене (возрастание)</option>
+                            <option value="price-desc">По цене (убывание)</option>
+                            <option value="name-asc">По названию (А-Я)</option>
+                            <option value="name-desc">По названию (Я-А)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="catalog__content">
+                <aside class="filters">
+                    <h3>Фильтры</h3>
+                    <div class="filter-group">
+                        <h4>Категории</h4>
+                        <div class="filter-options">
+                            <label>
+                                <input type="checkbox" name="category" value="food"> Продукты питания
+                            </label>
+                            <label>
+                                <input type="checkbox" name="category" value="household"> Бытовая химия
+                            </label>
+                            <label>
+                                <input type="checkbox" name="category" value="cosmetics"> Косметика
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Цена</h4>
+                        <div class="price-range">
+                            <input type="range" id="price-min" min="0" max="10000" value="0">
+                            <input type="range" id="price-max" min="0" max="10000" value="10000">
+                            <div class="price-inputs">
+                                <input type="number" id="min-price" value="0">
+                                <span>-</span>
+                                <input type="number" id="max-price" value="10000">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="apply-filters">Применить фильтры</button>
+                </aside>
+
+                <div class="products">
+                    <div class="products__grid">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="../images/goods/milk.jpg" alt="Молоко">
+                            </div>
+                            <div class="product-content">
+                                <h3 class="product-title">Молоко</h3>
+                                <p class="product-price">89 ₽</p>
+                                <button class="btn btn-primary add-to-cart">В корзину</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="../images/goods/bread.jpg" alt="Хлеб">
+                            </div>
+                            <div class="product-content">
+                                <h3 class="product-title">Хлеб</h3>
+                                <p class="product-price">45 ₽</p>
+                                <button class="btn btn-primary add-to-cart">В корзину</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="../images/goods/powder.jpg" alt="Стиральный порошок">
+                            </div>
+                            <div class="product-content">
+                                <h3 class="product-title">Стиральный порошок</h3>
+                                <p class="product-price">299 ₽</p>
+                                <button class="btn btn-primary add-to-cart">В корзину</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="../images/goods/shampoo.jpg" alt="Шампунь">
+                            </div>
+                            <div class="product-content">
+                                <h3 class="product-title">Шампунь</h3>
+                                <p class="product-price">199 ₽</p>
+                                <button class="btn btn-primary add-to-cart">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <button class="pagination__prev" disabled>Назад</button>
+                        <div class="pagination__numbers">
+                            <button class="active">1</button>
+                            <button>2</button>
+                            <button>3</button>
+                        </div>
+                        <button class="pagination__next">Вперед</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__column">
+                    <h3>О компании</h3>
+                    <p>Мы предлагаем широкий ассортимент товаров повседневного спроса по доступным ценам.</p>
+                </div>
+                <div class="footer__column">
+                    <h3>Контакты</h3>
+                    <p>Телефон: +7 (XXX) XXX-XX-XX</p>
+                    <p>Email: info@example.com</p>
+                </div>
+                <div class="footer__column">
+                    <h3>Мы в соцсетях</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link facebook" aria-label="Facebook">
+                            <img src="../images/icons/facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="#" class="social-link x" aria-label="X (Twitter)">
+                            <img src="../images/icons/x.svg" alt="X (Twitter)">
+                        </a>
+                        <a href="#" class="social-link instagram" aria-label="Instagram">
+                            <img src="../images/icons/instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="#" class="social-link telegram" aria-label="Telegram">
+                            <img src="../images/icons/telegram.svg" alt="Telegram">
+                        </a>
+                        <a href="#" class="social-link youtube" aria-label="YouTube">
+                            <img src="../images/icons/youtube.svg" alt="YouTube">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Aval Emporium. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/catalog.js"></script>
+</body>
+</html>

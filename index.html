@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aval Emporium - Товары повседневного спроса</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/main/logo.jpg" alt="Aval Emporium">
+                        <span class="logo-text">Aval Emporium</span>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="pages/catalog.html">Каталог</a></li>
+                        <li><a href="pages/cart.html">Корзина</a></li>
+                        <li><a href="pages/about.html">О нас</a></li>
+                        <li><a href="pages/profile.html">Личный кабинет</a></li>
+                    </ul>
+                </nav>
+                <div class="header__actions">
+                    <div class="search">
+                        <input type="text" placeholder="Поиск товаров...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="cart">
+                        <a href="pages/cart.html"><i class="fas fa-shopping-cart"></i></a>
+                        <span class="cart-count">0</span>
+                    </div>
+                    <div class="auth">
+                        <a href="pages/login.html">Войти</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h2>Добро пожаловать в Aval Emporium</h2>
+                        <p>Широкий ассортимент товаров повседневного спроса по доступным ценам</p>
+                        <div class="hero-buttons">
+                            <a href="pages/catalog.html" class="btn btn-primary">Перейти в каталог</a>
+                            <a href="#popular" class="btn btn-outline">Популярные товары</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <img src="images/main/delivery.jpg" alt="Доставка">
+                        </div>
+                        <h3 class="feature-title">Быстрая доставка</h3>
+                        <p class="feature-description">Доставляем заказы в течение 24 часов по всему городу</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <img src="images/main/skidki.jpg" alt="Скидки">
+                        </div>
+                        <h3 class="feature-title">Выгодные скидки</h3>
+                        <p class="feature-description">Регулярные акции и специальные предложения для наших клиентов</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <img src="images/main/kachestvo.jpg" alt="Качество">
+                        </div>
+                        <h3 class="feature-title">Гарантия качества</h3>
+                        <p class="feature-description">Тщательно проверяем все товары перед отправкой</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <img src="images/main/support.jpg" alt="Поддержка">
+                        </div>
+                        <h3 class="feature-title">Поддержка 24/7</h3>
+                        <p class="feature-description">Наши специалисты всегда готовы помочь вам с выбором</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular-categories">
+            <div class="categories-container">
+                <h2 class="categories-title">Популярные категории</h2>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <div class="category-image">
+                            <img src="images/main/products.jpg" alt="Продукты питания">
+                        </div>
+                        <div class="category-content">
+                            <h3 class="category-title">Продукты питания</h3>
+                            <p class="category-description">Широкий выбор свежих и качественных продуктов</p>
+                        </div>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-image">
+                            <img src="images/main/household.jpg" alt="Бытовая химия">
+                        </div>
+                        <div class="category-content">
+                            <h3 class="category-title">Бытовая химия</h3>
+                            <p class="category-description">Средства для уборки и ухода за домом</p>
+                        </div>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-image">
+                            <img src="images/main/cosmetics.jpg" alt="Косметика">
+                        </div>
+                        <div class="category-content">
+                            <h3 class="category-title">Косметика</h3>
+                            <p class="category-description">Средства для красоты и ухода за собой</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Отзывы наших клиентов</h2>
+                    <p class="section-description">Узнайте, что говорят о нас покупатели</p>
+                </div>
+                
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <img src="images/icons/star.svg" alt="Рейтинг">
+                            <img src="images/icons/star.svg" alt="Рейтинг">
+                            <img src="images/icons/star.svg" alt="Рейтинг">
+                            <img src="images/icons/star.svg" alt="Рейтинг">
+                            <img src="images/icons/star.svg" alt="Рейтинг">
+                        </div>
+                        <p class="testimonial-text">"Отличный магазин Aval Emporium! Быстрая доставка, качественные товары. Особенно порадовали цены и профессиональное обслуживание. Буду заказывать ещё!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="images/avatars/anna.jpg" alt="Анна М.">
+                            </div>
+                            <div class="author-info">
+                                <h4>Анна М.</h4>
+                                <p>Постоянный клиент</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <img src="images/icons/star.svg" alt="Рейтинг">
+                            <img src="images/icons/star.svg" alt="Рейтинг">
+                            <img src="images/icons/star.svg" alt="Рейтинг">
+                            <img src="images/icons/star.svg" alt="Рейтинг">
+                            <img src="images/icons/star.svg" alt="Рейтинг">
+                        </div>
+                        <p class="testimonial-text">"Заказываю здесь уже второй раз, всё очень нравится. Большой выбор товаров, удобный сайт и вежливые консультанты. Рекомендую!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="images/avatars/dmitry.jpg" alt="Дмитрий К.">
+                            </div>
+                            <div class="author-info">
+                                <h4>Дмитрий К.</h4>
+                                <p>Покупатель</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <img src="images/icons/star.svg" alt="Рейтинг">
+                            <img src="images/icons/star.svg" alt="Рейтинг">
+                            <img src="images/icons/star.svg" alt="Рейтинг">
+                            <img src="images/icons/star.svg" alt="Рейтинг">
+                            <img src="images/icons/star.svg" alt="Рейтинг">
+                        </div>
+                        <p class="testimonial-text">"Очень довольна покупками в Aval Emporium. Всегда свежие продукты, быстрая доставка и отличный сервис. Спасибо за вашу работу!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="images/avatars/elena.jpg" alt="Елена С.">
+                            </div>
+                            <div class="author-info">
+                                <h4>Елена С.</h4>
+                                <p>Постоянный клиент</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__column">
+                    <h3>О компании</h3>
+                    <p>Мы предлагаем широкий ассортимент товаров повседневного спроса по доступным ценам.</p>
+                </div>
+                <div class="footer__column">
+                    <h3>Контакты</h3>
+                    <p>Телефон: +7 (XXX) XXX-XX-XX</p>
+                    <p>Email: info@example.com</p>
+                </div>
+                <div class="footer__column">
+                    <h3>Мы в соцсетях</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link facebook" aria-label="Facebook">
+                            <img src="images/icons/facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="#" class="social-link x" aria-label="X (Twitter)">
+                            <img src="images/icons/x.svg" alt="X (Twitter)">
+                        </a>
+                        <a href="#" class="social-link instagram" aria-label="Instagram">
+                            <img src="images/icons/instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="#" class="social-link telegram" aria-label="Telegram">
+                            <img src="images/icons/telegram.svg" alt="Telegram">
+                        </a>
+                        <a href="#" class="social-link youtube" aria-label="YouTube">
+                            <img src="images/icons/youtube.svg" alt="YouTube">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Aval Emporium. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет покупателя</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/profile.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/main/logo.jpg" alt="Aval Emporium">
+                    <span class="logo-text">Aval Emporium</span>
+                </a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Поиск товаров...">
+                <button type="button">
+                    <img src="../images/icons/search.svg" alt="Поиск">
+                </button>
+            </div>
+            <div class="header-actions">
+                <a href="favorites.html" class="header-action">
+                    <img src="../images/icons/heart.svg" alt="Избранное">
+                    <span>Избранное</span>
+                </a>
+                <a href="cart.html" class="header-action">
+                    <img src="../images/icons/cart.svg" alt="Корзина">
+                    <span>Корзина</span>
+                </a>
+                <a href="profile.html" class="header-action active">
+                    <img src="../images/icons/user.svg" alt="Профиль">
+                    <span>Профиль</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="profile-page">
+        <div class="container">
+            <div class="profile-container">
+                <aside class="profile-sidebar">
+                    <div class="profile-info">
+                        <div class="profile-avatar">
+                            <img src="../images/default-avatar.png" alt="Аватар">
+                        </div>
+                        <h2 class="profile-name">Иван Иванов</h2>
+                        <p class="profile-email">ivan@example.com</p>
+                    </div>
+                    <nav class="profile-nav">
+                        <a href="profile.html" class="back-to-profile">
+                            <i class="fas fa-arrow-left"></i>
+                            Вернуться в профиль
+                        </a>
+                        <a href="#orders" class="active">Мои заказы</a>
+                        <a href="#personal">Личные данные</a>
+                        <a href="#addresses">Адреса доставки</a>
+                        <a href="#favorites">Избранное</a>
+                        <a href="#reviews">Мои отзывы</a>
+                        <a href="#notifications">Уведомления</a>
+                        <a href="login.html" class="logout">Выйти</a>
+                    </nav>
+                </aside>
+
+                <div class="profile-content">
+                    <section id="orders" class="profile-section active">
+                        <h1>Мои заказы</h1>
+                        <div class="orders-list">
+                            <div class="order-item">
+                                <div class="order-header">
+                                    <div class="order-info">
+                                        <span class="order-number">Заказ #12345</span>
+                                        <span class="order-date">15.03.2024</span>
+                                    </div>
+                                    <div class="order-status">В обработке</div>
+                                </div>
+                                <div class="order-products">
+                                    <div class="order-product">
+                                        <img src="../images/products/product1.jpg" alt="Товар">
+                                        <div class="product-info">
+                                            <h3>Название товара</h3>
+                                            <p>Количество: 1</p>
+                                            <p>Цена: 1999 ₽</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-footer">
+                                    <div class="order-total">Итого: 1999 ₽</div>
+                                    <button class="btn-primary">Повторить заказ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="personal" class="profile-section">
+                        <h1>Личные данные</h1>
+                        <form class="profile-form">
+                            <div class="form-group">
+                                <label for="name">Имя</label>
+                                <input type="text" id="name" value="Иван">
+                            </div>
+                            <div class="form-group">
+                                <label for="surname">Фамилия</label>
+                                <input type="text" id="surname" value="Иванов">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" value="ivan@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone" value="+7 (999) 123-45-67">
+                            </div>
+                            <button type="submit" class="btn-primary">Сохранить изменения</button>
+                        </form>
+                    </section>
+
+                    <section id="addresses" class="profile-section">
+                        <h1>Адреса доставки</h1>
+                        <div class="addresses-list">
+                            <div class="address-item">
+                                <h3>Основной адрес</h3>
+                                <p>г. Москва, ул. Пушкина, д. 10, кв. 5</p>
+                                <div class="address-actions">
+                                    <button class="btn-secondary">Редактировать</button>
+                                    <button class="btn-danger">Удалить</button>
+                                </div>
+                            </div>
+                            <button class="btn-primary">Добавить новый адрес</button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-column">
+                <h3>О компании</h3>
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Новости</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Помощь</h3>
+                <ul>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Возврат</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Контакты</h3>
+                <ul>
+                    <li>Телефон: 8 800 123-45-67</li>
+                    <li>Email: info@example.com</li>
+                    <li>Адрес: г. Москва, ул. Пушкина, д. 1</li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3>Мы в соцсетях</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link facebook" aria-label="Facebook">
+                        <img src="../images/icons/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="#" class="social-link x" aria-label="X (Twitter)">
+                        <img src="../images/icons/x.svg" alt="X (Twitter)">
+                    </a>
+                    <a href="#" class="social-link instagram" aria-label="Instagram">
+                        <img src="../images/icons/instagram.svg" alt="Instagram">
+                    </a>
+                    <a href="#" class="social-link telegram" aria-label="Telegram">
+                        <img src="../images/icons/telegram.svg" alt="Telegram">
+                    </a>
+                    <a href="#" class="social-link youtube" aria-label="YouTube">
+                        <img src="../images/icons/youtube.svg" alt="YouTube">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/profile.js"></script>
+</body>
+</html>
